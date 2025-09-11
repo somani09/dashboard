@@ -14,8 +14,8 @@ export default function CampaignActivity({
   return (
     <GlassLayout
       className={cn("flex h-auto w-auto flex-1", className)}
-      backgroundClassName="bg-white/10"
-      contentClassName="flex-1 flex backdrop-blur-[16px]"
+      backgroundClassName="bg-white/10 blur-[16px]"
+      contentClassName="flex-1 flex backdrop-blur-[20px]"
     >
       <div className="flex w-full flex-1 flex-col gap-4 p-4">
         <h2

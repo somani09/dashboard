@@ -23,16 +23,17 @@ const NavigationButton = ({
       className={cn("transition-all duration-300 ease-in-out", className)}
       backgroundClassName="bg-white/25 blur-[4px]"
       contentClassName={cn(
-        "group flex items-center justify-start gap-28 px-5 py-4 pr-8 text-xl font-medium text-primary backdrop-blur-[2px]",
+        "group flex items-center justify-start gap-28 px-5 py-4 pr-8 text-xl font-medium text-primary backdrop-blur-[2px] cursor-pointer",
         "transition-all duration-300 ease-in-out",
-        "hover:border-border hover:font-bold hover:text-heading",
+        "hover:border-border hover:font-bold ",
         isSelected && "bg-heading/95 font-bold text-text-muted",
+        !isSelected && "hover:text-heading",
       )}
     >
       <button
         type="button"
         onClick={onClick}
-        className="flex w-full items-start justify-start gap-4"
+        className="flex w-full cursor-pointer items-start justify-start gap-4"
         role="link"
         aria-current={isSelected ? "page" : undefined}
         aria-label="Navigation item"

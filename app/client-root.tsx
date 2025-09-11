@@ -55,7 +55,7 @@ export default function ClientRoot({
           className={cn(
             "fixed top-0 z-50 h-full transition-all duration-300 ease-in-out",
             sidebarOpen
-              ? "pointer-events-auto right-0 w-80 scale-100 sm:left-0 sm:w-96"
+              ? "pointer-events-auto right-0 w-80 scale-100 sm:left-0 sm:w-[420px]"
               : "pointer-events-none right-0 w-0 sm:pointer-events-auto sm:left-0 sm:w-[120px] sm:scale-100",
             "origin-[calc(100%-30px)_100px] sm:origin-[64px_64px]",
             !sidebarOpen && "scale-0 sm:scale-100",

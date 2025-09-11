@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/app/utils";
 import { FiChevronsLeft } from "react-icons/fi";
 import { MdGroups3, MdInsights } from "react-icons/md";
-import { TbSquareRoundedLetterF } from "react-icons/tb";
+import { TbSquareRoundedLetterD, TbSquareRoundedLetterF } from "react-icons/tb";
 import { CgClose } from "react-icons/cg";
 import { secondaryButtonClass } from "@/app/css-utils";
 import GlassLayout from "./layouts/glass-layout";
@@ -87,7 +87,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className, onClose, open }) => {
         {/* Logo & Title */}
         <div className="flex flex-col items-start">
           <div className="flex items-center justify-center">
-            <TbSquareRoundedLetterF
+            <TbSquareRoundedLetterD
               className={cn(
                 "text-heading shrink-0 transition-all duration-300 ease-in-out",
                 "h-[36px] w-[36px] stroke-[1] sm:h-[60px] sm:w-[60px]",
@@ -100,7 +100,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className, onClose, open }) => {
                 open ? "max-w-max opacity-100" : "opacity-0",
               )}
             >
-              Fluency
+              Dashboard
             </span>
           </div>
           <hr className="border-accent mt-4 mb-2 w-full border-2" />
