@@ -145,23 +145,55 @@ const Sidebar: React.FC<SidebarProps> = ({ className, onClose, open }) => {
         <div>
           <div
             className={cn(
-              "flex items-end justify-end space-x-2 overflow-visible pb-2 transition-all duration-300 ease-in-out sm:justify-start",
+              "flex flex-col space-y-2 overflow-visible pb-2 transition-all duration-300 ease-in-out",
               open ? "max-w-full opacity-100" : "max-w-0 opacity-0",
             )}
           >
-            <span className="text-subheading text-base font-semibold whitespace-nowrap">
-              My other projects:
-            </span>
             <Link
-              href="https://vaibhav-somani.vercel.app/projects"
+              href="https://docs.google.com/document/d/1OCig8evSuXtgnt_O0ZBUSuIXOYE6Jb-cKzSHr3f7sog/edit?usp=sharing"
               target="_blank"
-              className={cn(secondaryButtonClass, "min-w-max font-semibold")}
+              className={cn("text-secondary min-w-max font-semibold underline")}
               aria-label="View other projects"
             >
-              View Projects
+              Project Walkthrough Document
             </Link>
-          </div>
+            <hr className="border-accent-2 border-0.5 mb-1" />
 
+            <Link
+              href="https://www.figma.com/design/zfDVPRg7kxY4GMucVtR4ku/Dashboard?node-id=335-2417&t=SXpPtRKxrjXvs2ha-1"
+              target="_blank"
+              className={cn("text-secondary min-w-max font-semibold underline")}
+              aria-label="View other projects"
+            >
+              Figma Design File
+            </Link>
+            <hr className="border-accent-2 border-0.5 mb-1" />
+
+            <Link
+              href="https://github.com/somani09/dashboard"
+              target="_blank"
+              className={cn("text-secondary min-w-max font-semibold underline")}
+              aria-label="View other projects"
+            >
+              View Code On GitHub <br /> https://github.com/somani09/dashboard
+            </Link>
+
+            <hr className="border-accent-1 mb-4 border-1" />
+
+            <div className={cn("flex items-end space-x-2")}>
+              <span className="text-subheading text-base font-semibold whitespace-nowrap">
+                My other projects:
+              </span>
+              <Link
+                href="https://vaibhav-somani.vercel.app/projects"
+                target="_blank"
+                className={cn(secondaryButtonClass, "min-w-max font-semibold")}
+                aria-label="View other projects"
+              >
+                View Projects
+              </Link>
+            </div>
+          </div>
           <hr className="border-accent-1 mb-4 border-1" />
 
           {/* Profile */}
