@@ -59,7 +59,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className, onClose, open }) => {
       <aside
         ref={sidebarRef}
         className={cn(
-          "relative flex h-screen w-full flex-col justify-between overflow-hidden p-6",
+          "relative flex h-dvh w-full flex-col justify-between overflow-hidden p-6",
           className,
         )}
         aria-label="Sidebar Navigation"
